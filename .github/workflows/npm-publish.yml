@@ -13,7 +13,8 @@ jobs:
         with:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
-          permision: 'write'
+          permision: 
+            id-token: write
       - run: npm ci
       - run: npm publish --provenance --access public
       - run: echo ${{secrets.NPM_AUTH_TOKEN}}
