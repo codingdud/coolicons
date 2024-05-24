@@ -1,5 +1,5 @@
 {
-  "name": "@codingdud/coolicons",
+  "name": "@testhelp/coolicons",
   "version": "1.0.7",
   "type": "module",
   "main": "dist/index.cjs.js",
