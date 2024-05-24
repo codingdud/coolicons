@@ -21,10 +21,10 @@ jobs:
         run: |
           echo "Registry URL: https://registry.npmjs.org/"
           echo "Package name: $(jq -r .name < package.json)"
-      #- name: Authenticate to GitHub Package Registry
-      #  run: npm config set //npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN}}
-      #- run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-      #- run: echo "@codingdud:registry=https://registry.npmjs.org/" > ~/.npmrc
+      - name: Authenticate to GitHub Package Registry
+        run: npm config set //npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN}}
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+      - run: echo "@codingdud:registry=https://registry.npmjs.org/" > ~/.npmrc
 
       - name: Install dependencies
         run: npm install
