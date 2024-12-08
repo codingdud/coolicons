@@ -7,7 +7,8 @@ export default defineConfig({
     test: {
       globals: true,
       environment: "jsdom",
-      setupFiles: "./setupTests.ts",
+      setupFiles: ["./setupTests.ts","./vitest.setup.ts"],
+      css:true,
     },
   build: {
     lib: {
@@ -24,3 +25,4 @@ export default defineConfig({
   },
   plugins: [dts()], // Uses the 'vite-plugin-dts' plugin for generating TypeScript declaration files (d.ts).
 });
+

@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+      "types": ["vitest/globals", "@testing-library/jest-dom"],
       "target": "ES5", // Specifies the JavaScript version to target when transpiling code.
       "useDefineForClassFields": true, // Enables the use of 'define' for class fields.
       "lib": ["ES2020", "DOM", "DOM.Iterable"], // Specifies the libraries available for the code.

@@ -1,0 +1,39 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ArrowIcon from "./ArrowIcon.stories.tsx";
+
+<Meta of={ArrowIcon} title="Icons/ArrowIcon" />
+
+# ArrowIcon
+
+Arrow icon component with customizable size and color.
+
+#### Example
+
+<Canvas of={IconTemp.Medium} />
+
+## Usage
+
+```ts
+import { IconTemp } from "sld-ui";
+
+const Example = () => {
+  return (
+      <IconTemp
+        size={"medium"}
+        color={"#000000"}
+      />
+  );
+};
+
+export default Example;
+
+This MDX documentation:
+- Follows the same structure as your Button documentation
+- Shows a live example using Storybook Canvas
+- Provides a clear usage example with imports
+- Lists and explains the available props
+- Maintains consistent formatting with your existing documentation
+- Focuses on the two main props (size and color) that are specific to the icon component
+
+The documentation is clear and concise, making it easy for other developers to understand how to use the ArrowIcon component in their projects.
